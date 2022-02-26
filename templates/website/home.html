@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home Page - Blog App{% endblock title %}
+
+{% block body %}
+
+<div class="container text-center my-5">
+    <img src="{% static 'img/django-image.jpg' %}" width="400" height="300">
+</div>
+<div class="container">
+    <h1>What is Django</h1>
+    <p>Django is a free and open-source web application framework written in Python. It is used for rapid web
+        development and clean, pragmatic design. It is built by experienced developers to make repetitive tasks easier,
+        so we can focus on writing apps instead of reinventing the wheel.</p>
+</div>
+
+<div class="container">
+    <h2>The origins of Django</h2>
+    <p>Django was created in 2003 when web developers at the Lawrence Journal-World newspaper started using Python for
+        their web development. After creating a number of websites, they started to factor out and reuse lots of common
+        code and design patterns. That common code led to a generic web development framework that was open-sourced as
+        the “Django” project in 2005. Since the original developers were surrounded by those newspaper writers,
+        well-written documentation is a key part of Django. This means that there are excellent references to check out
+        on the official Django documentation pages.</p>
+</div>
+
+
+
+{% endblock body %}

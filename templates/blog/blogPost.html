@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{post.title}}{% endblock title %}
+
+{% block body %}
+<div class="container">
+    
+    <h2 class="blog-post-title">{{post.title}}</h2>
+    <p>{{post.timeStamp}} By: {{post.author}}</p>
+    <img src="{{ post.blogimage.url }}" style="width:300px;">
+    <p class="text-center">{{post.content|safe}}</p>
+    
+</div>    
+
+{% endblock body %}
